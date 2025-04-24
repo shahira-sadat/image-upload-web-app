@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Upload App</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Uploaded Images</h1>
+    <a href="/upload">Upload New Image</a>
+    <div class="gallery">
+      <% images.forEach(image => { %>
+        <img src="/uploads/<%= image %>" alt="Uploaded Image">
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>
